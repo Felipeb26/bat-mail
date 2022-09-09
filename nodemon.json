@@ -1,0 +1,7 @@
+{
+	"watch": "*.*",
+	"execMap": {
+		"js": "node app.js"
+	}
+	,"delay": "5000"
+}
