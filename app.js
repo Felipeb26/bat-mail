@@ -10,8 +10,10 @@ app.use(express.urlencoded({ extended: true }));
 const mail = require("./src/routes/mail.routes");
 app.use("/mail", mail);
 
+const pdf = require("./src/docs/pdf")
+app.use("/pdf",pdf)
+
 app.listen(port, () =>{
     console.log(`Rodando na porta${port}`);
     cron.run();
 })
-// app.app.listen(port, cron.run(), () => console.log(`Usando porta: ${port}!`));

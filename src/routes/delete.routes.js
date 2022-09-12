@@ -1,5 +1,4 @@
 const timer = require("node-cron");
-const routes = require("express").Router();
 
 function deleteByUse(){
     console.log("teste de crron")
